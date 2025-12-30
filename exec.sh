@@ -1,5 +1,6 @@
 #!/bin/bash
 pkg install python3
+pkg install wget
 python -m pip install flask mss pillow
 # Configurações
 VENV_DIR="venv_screenshare"
