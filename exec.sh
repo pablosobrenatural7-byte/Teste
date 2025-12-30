@@ -1,5 +1,5 @@
 #!/bin/bash
-
+pkg install python
 # Configurações
 VENV_DIR="venv_screenshare"
 SERVER_FILE="server_screenshare.py"
