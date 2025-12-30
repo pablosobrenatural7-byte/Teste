@@ -33,8 +33,7 @@ fi
 if [ ! -f "$CLOUDFLARED_BIN" ]; then
     echo "[INFO] Baixando Cloudflared..."
     # Lógica simplificada de download para x86_64 (PC comum)
-    wget -q -O "$CLOUDFLARED_BIN" "https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64"
-    chmod +x "$CLOUDFLARED_BIN"
+    pkg install cloudflared -y
 fi
 
 if [ ! -d "$VENV_DIR" ]; then
